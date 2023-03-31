@@ -27,6 +27,12 @@ pipeline {
                 }
             }
         }
+        stage('Branche') {
+            agent any
+            steps {
+                echo 'branche1'
+            }
+        }
         stage('Deliver') {
             agent any
             environment {
